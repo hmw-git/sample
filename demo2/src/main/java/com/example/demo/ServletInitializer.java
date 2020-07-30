@@ -1,13 +1,14 @@
 package com.example.demo;
 
-import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-public class ServletInitializer extends SpringBootServletInitializer {
+@RestController
+public class ServletInitializer {
 
-	@Override
-	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		return application.sources(DemoApplication.class);
-	}
+    @RequestMapping("hello")
+    public String sayHello(){
+        return ("Hello, SpringBoot on Wildfly");
+    }
 
 }
