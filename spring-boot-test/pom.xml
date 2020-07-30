@@ -8,6 +8,7 @@
 		<version>2.1.5.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+	
 	<groupId>com.tistory.offbyone</groupId>
 	<artifactId>spring-boot-test</artifactId>
 	<version>1.0</version>
@@ -52,7 +53,6 @@
                 <configuration>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                     <outputDirectory>target</outputDirectory>
-              		  <warName>ROOT</warName>
                 </configuration>
             </plugin>
 		</plugins>
