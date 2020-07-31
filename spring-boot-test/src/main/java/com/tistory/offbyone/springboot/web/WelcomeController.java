@@ -1,14 +1,14 @@
 package com.tistory.offbyone.springboot.web;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class WelcomeController {
-	
-	@RequestMapping("welcome")
-	public String welcome() {
-        return ("Hello World!!!");
-	}
+
+
+    @RequestMapping("hello")
+    public String sayHello(){
+        return ("Hello, SpringBoot on Wildfly");
+    }
 }
